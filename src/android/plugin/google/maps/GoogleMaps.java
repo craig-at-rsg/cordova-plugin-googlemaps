@@ -511,6 +511,8 @@ public class GoogleMaps extends CordovaPlugin implements View.OnClickListener, O
       }
     }
 
+        options.mapToolbarEnabled(false);
+        
     // map type
     if (params.has("mapType")) {
       String typeStr = params.getString("mapType");
