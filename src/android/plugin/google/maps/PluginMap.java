@@ -51,12 +51,13 @@ public class PluginMap extends MyPlugin {
       if (controls.has("indoorPicker")) {
         settings.setIndoorLevelPickerEnabled(controls.getBoolean("indoorPicker"));
       }
-      settings.setMapToolbarEnabled(false);
       if (controls.has("myLocationButton")) {
         settings.setMyLocationButtonEnabled(controls.getBoolean("myLocationButton"));
         map.setMyLocationEnabled(controls.getBoolean("myLocationButton"));
       }
     }
+    
+    settings.setMapToolbarEnabled(false);
     
     //gestures
     if (params.has("gestures")) {
